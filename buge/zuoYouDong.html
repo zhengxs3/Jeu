@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Animation</title>
+    <style>
+        .run {
+            width: 128px; /* Width of one frame */
+            height: 128px; /* Height of the frame */
+            position: absolute; /* Make the element positionable */
+            background-image: url('Red_Slime/Run.png'); /* Path to your image */
+            background-repeat: no-repeat;
+            animation: play7 1s steps(7) infinite; /* Animation over 7 frames */
+        }
+
+        @keyframes play7 {
+            from { background-position: 0px; }
+            to { background-position: -896px; } /* 128px * 7 frames = 896px */
+        }
+    </style>
+</head>
+<body>
+    <div class="run" id="runner"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const runner = document.getElementById('runner');
+            let positionX = 0; // Initial position
+            const stepSize = 10; // How much to move each key press
+
+            document.addEventListener('keydown', function(event) {
+                switch (event.key) {
+                    case 'ArrowLeft':
+                        // Move left
+                        positionX -= stepSize;
+                        break;
+                    case 'ArrowRight':
+                        // Move right
+                        positionX += stepSize;
+                        break;
+                }
+                runner.style.left = positionX + 'px'; // Update position
+            });
+        });
+    </script>
+</body>
+</html>
