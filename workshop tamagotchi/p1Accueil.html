@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="p1Accueil.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Tamagotchi </title>
+    <style>
+        .sprite {
+            width: 128px; /* Width of one frame */
+            height: 128px; /* Height of the frame */
+            background-image: url('image/Red_Slime/Idle.png'); /* 保留原有的背景图 */
+            background-repeat: no-repeat;
+            animation: play 1s steps(8) infinite; /* Adjust the number of steps to the number of frames */
+            transform: scale(2); /*daxiao*/
+        }
+
+        @keyframes play {
+            from { background-position: 0px; }
+            to { background-position: -1024px; } /* Move through all frames */
+        }
+
+        .animation-block {
+            background-image: url('image/image.png'); /* 将你上传的图片作为背景 */
+            background-size: cover; /* 确保图片填满背景 */
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ovale">
+            <p class="text1"><a href="p1Accueil.html">Tamagotchi</a></p>
+        </div>
+    </header>
+
+    <div class="input padding-zuo-10 padding-gao-35">
+        <input type="text"  id="text" placeholder="NOM">
+    </div>
+
+    <main class="padding-zuo-20 padding-you-60 padding-gao-20 padding-di-66">
+        <div class="container padding-10">
+            <div class="status-bars">
+                <div class="status-bar">
+                    <div class="status-label">Food</div>
+                    <div class="progress-container" id="progress-food"></div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-label">Sport</div>
+                    <div class="progress-container" id="progress-sport"></div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-label">Health</div>
+                    <div class="progress-container" id="progress-health"></div>
+                </div>
+            </div>
+            <div class="p1button">
+                <button class="jaune" onclick="feed()">Feed</button>
+                <button class="orange" onclick="exercise()">Sport</button>
+                <button class="rouge" onclick="heal()">Health</button>
+            </div>
+        </div>
+        <div class="animation-block padding-5">
+            <div class="sprite"></div> <!-- 保留 sprite 动画 -->
+        </div>
+
+        <div class="buttons2"></div>
+            <button class="begin" id="begin">Begin</button>
+            <button class="reset" id="reset">Reset</button>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Tamagotchi </title>
+    <style>
+        .jeu1 {
+            background-image: url('image/jeu1.png'); /* 将你上传的图片作为背景 */
+            background-size: cover; /* 确保图片填满背景 */
+            padding: 5px;
+        }
+
+        .jeu2 {
+            background-image: url('image/jeu2.png'); /* 将你上传的图片作为背景 */
+            background-size: cover; /* 确保图片填满背景 */
+            padding: 5px;
+        }
+
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ovale">
+            <p class="text1"><a href="p1Accueil.html">Tamagotchi</a></p>
+        </div>
+    </header>
+
+    <div class="padding-zuoyou-60 padding-gao-80 padding-di-66">
+        <div class="p2rectangle">
+            <div class="flex">
+                <div class="jeu1 p2box">
+                    <button id="game1" class="p2play-button">Play</button>
+                </div>
+                <div class="jeu2 p2box">
+                    <button id="game2" class="p2play-button">Play</button>
+                </div>
+                <div class="p2box">
+                    <button class="p2play-button">Play</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer></footer>
+
+    <script>
+        // 跳转到游戏 1
+        document.getElementById('game1').addEventListener('click', function() {
+            window.location.href = "jeu1Ball.html?game=1";
+        });
+
+        // 跳转到游戏 2
+        document.getElementById('game2').addEventListener('click', function() {
+            window.location.href = "jeu2BuildTower.html?game=2";
+        });
+    </script>
+</body>
+</html>

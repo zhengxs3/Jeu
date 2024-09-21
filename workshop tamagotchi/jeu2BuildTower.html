@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Block Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #score {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stack the Blocks!</h1>
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas" width="400" height="500"></canvas>
+
+	<div class="overlay" id="overlay">
+        <div class="custom-alert">
+            <p id="alert-message">Game over! Your score was: </p>
+            <button onclick="restartGame()">Restart</button>
+            <button onclick="redirectToNextPage()">Home</button>
+        </div>
+    </div>
+    
+    <script src="jeu2BuildTower.js"></script>
+</body>
+</html>

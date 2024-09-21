@@ -1,0 +1,496 @@
+.begin {
+    position: absolute;
+    font-family: "Livvic", system-ui;
+    left: 5vh;
+    top: 78vh;
+    width: 10vh;
+    background-color: green;
+    color: antiquewhite;
+    border-color: rgb(50, 181, 48);
+    border-radius: 10%;
+}
+
+.begin:hover{
+    color: black;
+    background-color: rgb(45, 141, 43);
+}
+
+.reset {
+    position: absolute;
+    font-family: "Livvic", system-ui;
+    right: 5vh;
+    top: 78vh;
+    width: 10vh;
+    background-color: red;
+    color: antiquewhite;
+    border-color: rgb(230, 14, 46);
+    border-radius: 10%;
+}
+
+.reset:hover{
+    color: black;
+    background-color: rgb(255, 78, 104);
+}
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/******************code moi****************************************************************/
+
+/******tangchuang**************/
+
+/* 弹窗的背景遮罩 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 弹窗样式 */
+.custom-alert {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+
+.custom-alert button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* 按钮占据弹窗的整个宽度 */
+}
+
+.custom-alert button:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+/**********************************/
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.yemian-c-10-k-100{
+    width: 100%;
+    height: 100vh;
+}
+
+.padding-5{
+    padding: 5px;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.padding-gao-20{
+    padding-top: 20px;
+}
+
+.padding-gao-25{
+    padding-top: 25px;
+}
+
+.padding-gao-30{
+    padding-top: 30px;
+}
+
+.padding-gao-35{
+    padding-top: 35px;
+}
+
+.padding-gao-40{
+    padding-top: 40px;
+}
+
+.padding-gao-50{
+    padding-top: 50px;
+}
+
+.padding-gao-60{
+    padding-top: 60px;
+}
+
+.padding-gao-80{
+    padding-top: 80px;
+}
+
+.padding-di-30{
+    padding-bottom: 30px;
+}
+
+.padding-di-66{
+    padding-bottom: 66px;
+}
+
+.padding-zuo-10{
+    padding-left: 10px;
+}
+
+.padding-zuo-20{
+    padding-left: 20px;
+}
+
+.padding-zuo-30{
+    padding-left: 30px;
+}
+
+.padding-zuo-60{
+    padding-left: 60px;
+}
+
+.padding-you-60{
+    padding-right: 60px;
+}
+
+.padding-zuoyou-25{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.padding-zuoyou-60{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 50%;
+}
+
+.animation-block {
+    width: 50%;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-bars {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.status-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.status-label {
+    width: 50px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+/*****btn*************************************************************/
+
+.p1button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.p2play-button {
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.p2play-button:hover {
+    background-color: #ddd;
+}
+
+
+
+/************************************************************/
+
+main {
+    flex: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p2rectangle {
+    background-color: #ccc;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.p2box {
+    background-color: rgb(184, 184, 184);
+    width: 30%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+/***********************************************************wo***************************************************************/
+/* 设置页面的整体布局 */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 页面高度占满视口 */
+}
+
+/* 页头样式 */
+header {
+    background-color: #3498db; /* 头部为橙色 */
+    box-shadow: 0px 3px 5px rgb(135, 132, 132);
+    padding: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    position: relative; /* 让圆形和蓝色方块相对 header 定位 */
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #FF86C0; /* 页脚为灰色 */
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    height: 75px;
+    box-shadow: 0px -2px 3px rgb(135, 132, 132);
+}
+
+
+.ovale {
+    display: flex; /* 启用 flexbox 为圆形容器 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    width: 200px;
+    height: 130px;
+    background: #CFE6FF;
+    border-radius: 150px / 100px;
+    box-shadow: 0px 3px 5px rgb(135, 132, 132);
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translate(-50%, 0); /* 使其水平居中 */
+    z-index: 1; /* 确保圆形在蓝色方块之上 */
+}
+
+/* 圆形内的文字样式 */
+.text1 {
+    text-align: center;
+    font-size: 120%;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Console", sans-serif;
+}
+
+/* 外层容器的样式 */
+.progress-container {
+    width: 280px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+/* 单个进度块的样式 */
+.progress-block {
+    width: 30px;
+    height: 100%;
+    background-color: #dcdcdc; /* 默认的灰色 */
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+/* 已完成的进度块的样式 */
+.progress-block.active {
+    background-color: blue;
+}
+
+.progress-block.activeVert {
+    background-color: rgb(17, 207, 61);
+}
+
+
+.bianzy-15px {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.rouge{
+    background-color: rgb(253, 91, 91);
+}
+
+.orange{
+    background-color: rgb(251, 172, 25);
+}
+
+.jaune{
+    background-color: rgb(245, 240, 94);
+}
+
+
+/********************image buge pour Slime**************************************************/
+
+.attack1 {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Attack_1.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play4 1s steps(4) infinite; /* Animation over 4 frames */
+}
+
+.attack2 {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Attack_2.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play4 1s steps(4) infinite; /* Animation over 4 frames */
+}
+
+.attack3 {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Attack_3.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play5 1s steps(5) infinite; /* Animation over 4 frames */
+}
+
+.dead {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Blue_Slime/Dead.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play3 1s steps(3) infinite; /* Animation over 4 frames */
+}
+
+.hurt {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Hurt.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play6 1s steps(6) infinite; /* Animation over 4 frames */
+}
+
+.idle {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Idle.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play8 1s steps(8) infinite; /* Animation over 4 frames */
+}
+
+.jump {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Jump.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play13 1s steps(13) infinite; /* Animation over 4 frames */
+}
+
+.run {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Run.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play7 1s steps(7) infinite; /* Animation over 4 frames */
+}
+
+.runAttack {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Run+Attack.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play10 1s steps(10) infinite; /* Animation over 4 frames */
+}
+
+.walk {
+    width: 128px; /* Width of one frame */
+    height: 128px; /* Height of the frame */
+    background-image: url('Red_Slime/Walk.png'); /* Path to your image */
+    background-repeat: no-repeat;
+    animation: play8 1s steps(8) infinite; /* Animation over 4 frames */
+}
+
+
+@keyframes play3 {
+    from { background-position: 0px; }
+    to { background-position: -384px; } /* 128px * 3 frames = 384px */
+}
+
+@keyframes play4 {
+    from { background-position: 0px; }
+    to { background-position: -512px; } /* 128px * 4 frames = 512px */
+}
+
+@keyframes play5 {
+    from { background-position: 0px; }
+    to { background-position: -640px; } /* 128px * 5 frames = 640px */
+}
+
+@keyframes play6 {
+    from { background-position: 0px; }
+    to { background-position: -768px; } /* 128px * 4 frames = 512px */
+}
+
+@keyframes play7 {
+    from { background-position: 0px; }
+    to { background-position: -896px; } /* 128px * 4 frames = 512px */
+}
+
+@keyframes play8 {
+    from { background-position: 0px; }
+    to { background-position: -1024px; } /* 128px * 4 frames = 512px */
+}
+
+@keyframes play10 {
+    from { background-position: 0px; }
+    to { background-position: -1280px; } /* 128px * 4 frames = 512px */
+}
+
+@keyframes play13 {
+    from { background-position: 0px; }
+    to { background-position: -1664px; } /* 128px * 4 frames = 512px */
+}
